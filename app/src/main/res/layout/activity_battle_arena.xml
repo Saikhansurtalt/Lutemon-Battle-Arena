@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#CCE4F7"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:gravity="center_horizontal">
+
+    <!-- Enemy Lutemon -->
+    <ImageView
+        android:id="@+id/enemyImage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:contentDescription="Enemy Image" />
+
+    <TextView
+        android:id="@+id/enemyStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="4dp" />
+
+    <ProgressBar
+        android:id="@+id/enemyHpBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="240dp"
+        android:layout_height="8dp"
+        android:progressTint="#F44336"
+        android:max="100"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Battle Log (ScrollView) -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#333"
+        android:layout_marginVertical="8dp">
+
+        <TextView
+            android:id="@+id/battleLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Battle begins..."
+            android:textColor="#FFF"
+            android:padding="8dp"
+            android:textSize="14sp" />
+    </ScrollView>
+
+    <!-- Player Lutemon -->
+    <ImageView
+        android:id="@+id/playerImage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:contentDescription="Player Image" />
+
+    <TextView
+        android:id="@+id/playerStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="4dp" />
+
+    <ProgressBar
+        android:id="@+id/playerHpBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="240dp"
+        android:layout_height="8dp"
+        android:progressTint="#4CAF50"
+        android:max="100"
+        android:layout_marginBottom="16dp" />
+
+    <!-- First Row: Attack + Defend -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnAttack"
+            android:text="⚔️ Attack"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:backgroundTint="#FF5722"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnDefend"
+            android:text="🛡️ Defend"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:backgroundTint="#3F51B5"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Second Row: Switch + Back -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnChange"
+            android:text="🔄 Switch"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:backgroundTint="#009688"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:text="⬅️ Back"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:backgroundTint="#757575"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>

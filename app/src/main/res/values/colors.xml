@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pokemon_train">#4CAF50</color> <!-- Green -->
+    <color name="pokemon_train_pressed">#388E3C</color>
+
+    <color name="pokemon_evolve">#2196F3</color> <!-- Blue -->
+    <color name="pokemon_evolve_pressed">#1976D2</color>
+
+    <color name="pokemon_rename">#FFC107</color> <!-- Yellow -->
+    <color name="pokemon_rename_pressed">#FFA000</color>
+
+    <color name="pokemon_delete">#F44336</color> <!-- Red -->
+    <color name="pokemon_delete_pressed">#D32F2F</color>
+
+    <color name="purple_500">#6200EE</color>
+
+
+</resources>
